@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+.class{
+    background-color: rgb(62, 70, 70);
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+
+}
+.class h2{
+    color:#fff;
+
+}
+.class ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 50px;
+    text-transform: uppercase;
+    padding-right: 40px;
+}
+.class ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+}
+
+.active{
+    color:rgb(224, 178, 108);
+}
+
+.class ul li a:hover{
+    color: rgb(224, 178, 108);
+}
+.sec,.sec2{
+    height:109vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: 600;
+}
+.sec2{
+    background-color: rgb(159, 146, 130);
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    padding-right: 10px;
+    display:none;
+
+}
+#check{
+    display: none;
+}
+@media only screen and (max-width:750px) 
+{
+    .checkbtn{
+        display: block;
+    }
+    .class{
+        position: relative;
+    }
+    .class ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        margin-top: 100px;
+        background: rgb(61, 35, 35);
+    }
+}
